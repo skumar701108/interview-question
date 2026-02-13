@@ -1,0 +1,50 @@
+1. How do you sort a Map<K,V> by key and by value? (TreeMap vs Stream API + Comparator)
+2. Implement a thread-safe Singleton (Bill Pugh/Double-Checked Locking with volatile).
+3. Difference between Comparable and Comparator (natural ordering vs external strategy).
+4. Key features introduced in Java 7, 8, 11 and 17 (NIO.2, Streams, Lambda, Optional, var, HTTP Client, Records, Sealed Classes).
+5. What is try-with-resources and how AutoCloseable works internally?
+6. What is a multi-catch block and when should you avoid it?
+7. Difference between Runnable and Callable.
+8. Types of Exceptions checked vs unchecked. Explain Exception hierarchy.
+9. Common Design Patterns in Java.
+10. OOP principles Abstraction, Encapsulation, Inheritance, Polymorphism (real examples).
+11. ConcurrentHashMap internals.
+12. How Garbage Collection works.
+
+𝗗𝗦𝗔/𝗖𝗼𝗱𝗶𝗻𝗴
+1. Find duplicate strings in a list (HashSet / frequency map).
+2. Check whether a string is a palindrome (two-pointer approach).
+3. Combination Sum II (backtracking + pruning).
+4. Using Java Streams: filter odd numbers, transform values, then compute aggregate sum.
+5. Missing number in a consecutive array (Gauss sum/XOR approach).
+6. Move all zeroes to the end in O(n) time and O(1) space.
+7. Check if two strings are anagrams (sorting vs frequency array).
+8. Longest Common Prefix among strings (horizontal scanning/Trie optimization).
+9. Longest Increasing Subsequence (DP + binary search optimization O(n log n)).
+10. Best Time to Buy & Sell Stock (single pass greedy algorithm).
+11. Implement Dijkstra’s Algorithm using a priority queue (min-heap).
+12. Coin Change (minimum coins using dynamic programming).
+13. Reverse-Add Palindrome problem.
+
+𝗗𝗮𝘁𝗮𝗯𝗮𝘀𝗲 (𝗦𝗤𝗟)
+ 1. How to find the number of tables and their columns in the SQL DB?
+ 2. What is the purpose of a database index?
+ 3. How do you detect duplicate rows in SQL?
+ 4. How would you design a schema for a ride-sharing app?
+
+𝗪𝗲𝗯 / 𝗙𝗿𝗮𝗺𝗲𝘄𝗼𝗿𝗸𝘀
+ 1. Difference between REST and SOAP.
+ 2. What is Spring?
+ 3. Why do we use Spring?
+ 4. Difference between Spring and Spring Boot?
+ 5. How does autowiring work in Spring?
+ 6. What is Spring Security?
+ 7. What is a RESTful API?
+ 8. Difference between HTTP and HTTPS.
+
+𝗦𝘆𝘀𝘁𝗲𝗺 𝗗𝗲𝘀𝗶𝗴𝗻
+1. Explain architecture of one recent project.
+2. Design a fraud detection system for financial transactions.
+3. Database design for ride-sharing platform.
+4. Data warehouse for an online retailer.
+5. Design a news aggregator.
