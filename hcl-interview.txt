@@ -1,0 +1,271 @@
+1. Given a string `s`, find the length of the longest substring without repeating characters. (Longest Substring Without Repeating Characters)
+
+ 
+
+2. Given an array of integers `nums` and an integer `target`, return indices of the two numbers such that they add up to `target`. You may assume that each input would have exactly one solution, and you may not use the same element twice. (Two Sum)
+
+ 
+
+3. Given head of a linked list, reverse the list in-place. (Reverse Linked List)
+
+ 
+
+4. Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Return the answer in any order. (Letter Combinations of a Phone Number)
+
+ 
+
+5. Given an m x n 2D binary grid which represents a map of '1's (land) and '0's (water), return the number of islands. (Number of Islands)
+
+ 
+
+6. Given an integer array `nums`, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0. Notice that the solution set must not contain duplicate triplets. (3Sum)
+
+ 
+
+7. Given a string `s` and a dictionary of strings `wordDict`, return true if `s` can be segmented into a space-separated sequence of one or more dictionary words. (Word Break)
+
+ 
+
+8. Given an array of intervals where intervals[i] = [start_i, end_i], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input. (Merge Intervals)
+
+ 
+
+9. Given the head of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list sorted as well. (Remove Duplicates from Sorted List)
+
+ 
+
+10. Given an m x n matrix, return all elements of the matrix in spiral order. (Spiral Matrix)
+
+ 
+
+ 
+
+### Spring Boot Microservices
+
+ 
+
+1. In a high-traffic e-commerce platform using Spring Boot microservices, describe a scenario where you've implemented circuit breaker patterns with Resilience4j or Hystrix to handle service failures. How did you configure fallback methods and timeouts to ensure system resilience, and what metrics did you monitor to optimize retry strategies?
+
+ 
+
+2. Explain a real-world business case in a banking application where you used API Gateway (like Spring Cloud Gateway) to manage routing, rate limiting, and security for multiple microservices. How did you handle authentication propagation across services, and what performance improvements did you achieve by implementing caching at the gateway level?
+
+ 
+
+3. In a logistics system built with Spring Boot, discuss how you've applied the Saga pattern for distributed transactions across microservices handling order processing, inventory, and shipping. What challenges did you face with eventual consistency, and how did you use compensating transactions to maintain data integrity?
+
+ 
+
+4. Describe a situation in a healthcare app where you decomposed a monolithic Spring application into microservices. What criteria did you use for bounded contexts, and how did you optimize inter-service communication using REST vs. gRPC, considering latency and payload size?
+
+ 
+
+5. In a social media platform, how have you implemented service discovery with Eureka or Consul in Spring Boot microservices? Provide an example of handling dynamic scaling during peak hours, including load balancing strategies and how you monitored service health to prevent cascading failures.
+
+ 
+
+6. For a financial trading system, explain how you've used Spring Cloud Config for centralized configuration management across microservices. How did you integrate it with Git for version control, and what security measures (like encryption) did you apply to sensitive properties, along with refresh strategies for runtime updates?
+
+ 
+
+7. In an IoT data processing application, discuss implementing asynchronous communication between microservices using Spring Integration or Reactor. How did you handle backpressure and error propagation in event-driven flows, and what optimizations did you make for throughput during high-volume data ingestion?
+
+ 
+
+8. Describe a business case in an online marketplace where you applied the CQRS pattern in Spring Boot microservices. How did you separate command and query sides, what databases did you choose for each (e.g., MongoDB for reads), and how did you ensure data synchronization while improving read performance?
+
+ 
+
+9. In a ride-sharing service, how have you managed database per service in microservices architecture with Spring Data JPA? Explain a scenario where you dealt with data consistency issues across services, using patterns like event sourcing, and how you optimized queries for join-heavy operations without violating microservice boundaries.
+
+ 
+
+10. For a content streaming platform, explain implementing observability in Spring Boot microservices using Micrometer, Prometheus, and Grafana. How did you trace requests across services with Sleuth and Zipkin, and what key performance indicators (KPIs) did you track to identify bottlenecks and optimize resource allocation?
+
+ 
+
+ 
+
+### Kafka
+
+ 
+
+1. In a real-time analytics dashboard for a retail business, describe how you've designed a Kafka topic partitioning strategy to handle high-throughput order events. How did you choose the number of partitions based on consumer parallelism, and what optimizations did you make for rebalancing during scaling to minimize latency?
+
+ 
+
+2. Explain a scenario in a fraud detection system where you used Kafka Streams for stateful processing of transaction data. How did you manage windowed aggregations for anomaly detection, handle late-arriving events with grace periods, and optimize memory usage with RocksDB state stores?
+
+ 
+
+3. In a logistics tracking application, discuss implementing exactly-once semantics in Kafka producers and consumers for shipment status updates. What configurations (like idempotence and transactions) did you use, and how did you handle failures to ensure no duplicates while maintaining performance?
+
+ 
+
+4. For a social feed generation system, how have you used Kafka Connect to integrate with external databases like MySQL for CDC (Change Data Capture)? Describe connector configurations for schema evolution, and optimizations for batching to reduce overhead in high-volume data synchronization.
+
+ 
+
+5. In a banking app's notification service, explain partitioning keys in Kafka topics for user-specific messages. How did you ensure even distribution to avoid hot partitions, and what monitoring tools (like Kafka Manager) did you use to detect and resolve imbalances affecting throughput?
+
+ 
+
+6. Describe a business case in an e-learning platform where you implemented dead-letter queues (DLQs) in Kafka for handling failed message processing. How did you configure error handling in consumers, retry policies, and alerting mechanisms to debug and recover from poison messages without impacting the main flow?
+
+ 
+
+7. In a big data pipeline for marketing campaigns, how have you optimized Kafka broker configurations for storage and retention policies? Discuss trade-offs between log compaction vs. deletion for topics with key-based data, and how you tuned JVM heap sizes for better garbage collection performance.
+
+ 
+
+8. For a real-time inventory management system, explain using KSQL for querying Kafka streams to compute stock levels. How did you define continuous queries for aggregations, handle joins between streams and tables, and optimize query performance by partitioning aligned with the data?
+
+ 
+
+9. In a healthcare monitoring app, discuss securing Kafka clusters with SSL and ACLs for multi-tenant access. How did you implement role-based access for producers/consumers, audit logging for compliance, and what performance impacts did you mitigate through certificate management?
+
+ 
+
+10. Describe scaling Kafka consumers in a video streaming service for user activity logs. How did you use consumer groups for parallelism, handle offset management with auto vs. manual commits, and optimize fetch sizes to balance latency and throughput during peak loads?
+
+ 
+
+ 
+
+### Spark
+
+ 
+
+1. In a large-scale e-commerce recommendation engine, describe how you've optimized Spark jobs for processing user clickstream data using DataFrames vs. RDDs. What partitioning strategies did you apply to reduce shuffle operations, and how did you tune executor memory to handle skewed data distributions?
+
+ 
+
+2. Explain a scenario in a financial fraud analysis system where you used Spark SQL for querying petabyte-scale datasets stored in Parquet on S3. How did you optimize join operations with broadcast hints, and what caching mechanisms did you implement to improve iterative query performance?
+
+ 
+
+3. For a real-time sentiment analysis pipeline in social media monitoring, discuss implementing Spark Structured Streaming with Kafka integration. How did you handle watermarking for late data, manage stateful aggregations, and optimize checkpointing to ensure fault tolerance without excessive latency?
+
+ 
+
+4. In a logistics optimization app, how have you used MLlib in Spark for clustering delivery routes. Describe feature engineering on geospatial data, hyperparameter tuning with cross-validation, and optimizations for distributed training to reduce job completion time.
+
+ 
+
+5. Describe a business case in healthcare analytics where you partitioned Spark datasets by date for time-series patient data. How did you handle data skew in aggregations, use bucketing for efficient joins, and monitor spill to disk to optimize resource utilization?
+
+ 
+
+6. In an ad-tech platform, explain tuning Spark configurations for YARN cluster mode in processing bid requests. What settings for dynamic allocation did you use, how did you profile jobs with Spark UI to identify bottlenecks, and what improvements in throughput did you achieve?
+
+ 
+
+7. For a batch ETL job in a retail inventory system, discuss using Spark to transform CSV data into Delta Lake tables. How did you implement ACID transactions for upserts, optimize Z-ordering for query performance, and handle schema evolution in production?
+
+ 
+
+8. In a video analytics service, how have you optimized graph processing with GraphX in Spark for user connection networks. Describe vertex partitioning strategies, handling iterative algorithms like PageRank, and tuning garbage collection to minimize pauses.
+
+ 
+
+9. Explain securing Spark clusters in a multi-tenant environment for a cloud-based analytics service. How did you integrate Kerberos for authentication, use Ranger for fine-grained access control, and what performance overheads did you mitigate through configuration?
+
+ 
+
+10. In a sensor data processing pipeline for IoT, describe using Spark's window functions in streaming for anomaly detection over sliding windows. How did you optimize trigger intervals, manage memory for state, and integrate with external sinks like Cassandra for persistence?
+
+ 
+
+ 
+
+### SQL
+
+ 
+
+1. In a high-volume e-commerce database, describe a scenario where you optimized a complex query involving multiple joins on orders, products, and customers tables. How did you choose between INNER JOIN vs. LEFT JOIN for performance, and what indexing strategies did you apply to reduce full table scans?
+
+ 
+
+2. Explain a real-world business case in a banking system where you compared subqueries vs. joins for retrieving account transactions filtered by user activity. What were the performance trade-offs in terms of execution plans, and how did you use EXPLAIN to refactor for better I/O efficiency?
+
+ 
+
+3. For a logistics tracking database, discuss implementing window functions (like ROW_NUMBER or LAG) to analyze shipment delays over time. How did you partition the data for accurate rankings, and what optimizations did you make to handle large datasets without excessive memory usage?
+
+ 
+
+4. In a healthcare records system, how have you used Common Table Expressions (CTEs) for recursive queries to traverse patient referral hierarchies. Describe challenges with depth limits, performance tuning with indexes, and alternatives like stored procedures for better maintainability.
+
+ 
+
+5. Describe optimizing aggregate queries in a sales analytics database, such as GROUP BY with HAVING for regional revenue. How did you use materialized views to precompute results, handle rollups with CUBE, and monitor query cache hits to improve response times?
+
+ 
+
+6. In a social media app's database, explain handling pagination for feed queries using OFFSET vs. keyset pagination (e.g., WHERE id > last_id). What scalability issues did you address for large offsets, and how did you integrate LIMIT with ORDER BY for consistent performance?
+
+ 
+
+7. For a financial reporting system, discuss using correlated subqueries for calculating running totals in transaction logs. How did you refactor to window functions for better efficiency, and what database-specific features (like MySQL's variables) did you consider as fallbacks?
+
+ 
+
+8. In an inventory management database, how have you optimized queries with EXISTS vs. IN for checking stock availability across warehouses. Describe execution plan differences, anti-patterns to avoid (like NOT IN with NULLs), and indexing to speed up semi-joins.
+
+ 
+
+9. Explain a scenario in HR analytics where you used UNION ALL vs. UNION for combining employee data from multiple sources. How did you handle duplicate elimination performance costs, sort operations, and alternatives like FULL OUTER JOIN for comprehensive reporting?
+
+ 
+
+10. In a real-time monitoring dashboard database, describe tuning queries with multiple conditions in WHERE clauses using AND/OR. How did you reorder predicates for short-circuiting, use covering indexes to avoid table access, and profile with slow query logs to identify and resolve bottlenecks?
+
+ 
+
+ 
+
+### Big Data (Hadoop Ecosystem + Related Technologies)
+
+ 
+
+1. In a telecom company processing 50–100 TB of CDR (Call Detail Record) data daily, explain how you designed a Hadoop-based ingestion pipeline using Flume + Kafka + HDFS. How did you handle data duplication during failures, tune Flume channels for high throughput, and decide between batch vs. near-real-time ingestion, including the impact on downstream Hive/Spark jobs?
+
+ 
+
+2. Describe a real-world scenario in an e-commerce platform where you optimized a Hive query running on a 10 PB data lake that was taking 4+ hours for daily sales reporting. What steps did you take (partitioning, bucketing, ORC vs. Parquet, vectorization, Tez vs. MapReduce, statistics collection, etc.), and how much performance gain did you achieve? What trade-offs did you make?
+
+ 
+
+3. In a banking fraud detection system ingesting 1 billion+ transactions per day, explain how you implemented incremental data loading into a Hive/Impala warehouse using ACID tables (ORC) and HDFS snapshots. How did you handle schema evolution, manage small file problems with compaction, and ensure query performance remained stable during peak load?
+
+ 
+
+4. For a large logistics company tracking millions of shipments, discuss how you architected HBase for storing real-time tracking events with millisecond-level read latency. Explain row key design to avoid hot-spotting, column family choices, Bloom filters, compression, and how you handled compaction storms during heavy writes.
+
+ 
+
+5. In a media company analyzing user viewing patterns across 100 million+ users, describe a situation where you had severe data skew in a Spark-on-YARN job processing clickstream data. How did you identify the skew (Spark UI metrics), mitigate it (salting, custom partitioners, broadcast joins, AQE), and what was the before/after runtime improvement?
+
+ 
+
+6. Explain how you implemented a multi-tenant Hadoop cluster (Kerberos + Ranger/Sentry) for different business units (marketing, finance, analytics) with strict data isolation. How did you configure queue placement, resource allocation using Fair Scheduler or Capacity Scheduler, and handle noisy neighbor issues during peak batch windows?
+
+ 
+
+7. In an insurance company building a 360° customer view, discuss migrating from a traditional RDBMS to a Hadoop + HBase + Phoenix architecture. What challenges did you face with migrating historical data, maintaining referential integrity, handling slowly changing dimensions (SCD Type 2), and how did you ensure sub-second query performance on Phoenix?
+
+ 
+
+8. Describe troubleshooting and resolving a production issue where a critical Oozie workflow (coordinating Hive ETL + Spark ML jobs) was failing intermittently due to YARN container allocation failures. What logs/metrics did you check (ResourceManager, NodeManager, Application Timeline Server), how did you tune YARN configurations (minimum/maximum allocation, vcores/memory ratios), and what permanent fix did you implement?
+
+ 
+
+9. For a retail chain with stores across multiple countries, explain designing a data lake architecture using Hadoop + Delta Lake (or Iceberg) on top of HDFS/S3. How did you implement schema enforcement, time-travel queries for auditing, ACID merges for inventory corrections, and optimize read performance for BI tools like Tableau/Presto?
+
+ 
+
+10. In a high-scale advertising platform serving real-time bidding data (5–10 million events/sec), discuss how you used Hadoop + Kafka + Spark Streaming (or Structured Streaming) + HBase to build a near-real-time analytics layer. Explain exactly-once semantics, windowing strategies, state management, backpressure handling, and how you achieved < 5-second end-to-end latency while scaling horizontally.
+
+ 
+
+ 

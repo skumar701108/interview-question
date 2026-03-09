@@ -1,0 +1,10 @@
+🔹 What is Kubernetes and why do we use it?
+🔹 Explain Pod lifecycle.
+🔹 Difference between Deployment, ReplicaSet, and StatefulSet?
+🔹 What is the role of kubelet and kube-proxy?
+🔹 Explain different Service types (ClusterIP, NodePort, LoadBalancer).
+🔹 What are Liveness and Readiness probes?
+🔹 How does ConfigMap differ from Secret?
+🔹 What is Ingress and when do you use it?
+🔹 Explain Rolling Update vs Blue-Green deployment.
+🔹 How does Kubernetes handle self-healing?

@@ -1,0 +1,42 @@
+1.check whether two strings are anagrams.
+2. find the first non-repeating character in a string.
+3. find all duplicate characters in a string.
+4. find the second largest element in an array without sorting.
+5. find the missing number in an array of numbers from 1 to N.
+6. reverse words in a sentence without reversing characters.
+7. rotate an array by K positions.
+8. move all zeros to the end of an array while maintaining order.
+9. find the intersection of two arrays.
+10.find the kth largest element in an array.
+
+
+Mid-Level (3–6 Years)
+
+Focus: Collections, Java 8 streams, and data structures
+
+11. find duplicate elements in a list using Java 8 streams.
+12.Given a list of integers, find the top 3 maximum numbers using streams.
+13. group words by their length using Java 8 streams.
+14.convert a list of strings into a map where key = string and value = length.
+15.find frequency of each element in a list using streams.
+16.sort a list of Employee objects by salary and then by age.
+17.merge two maps and sum values of duplicate keys.
+18.check if parentheses in an expression are balanced.
+19.Implement a custom stack using an array.
+20.Implement a queue using two stacks.
+
+
+Expert / Senior Level (7–12+ Years)
+
+Focus: concurrency, design, system thinking, and complex algorithms
+
+21.find the longest substring without repeating characters.
+22.find the first repeating character in a string.
+23.print even and odd numbers using two threads.
+24.Implement a thread-safe Singleton class.
+25.Producer–Consumer problem using wait() and notify().
+26.create a thread-safe counter.
+27.Implement an LRU Cache.
+28.Create your own custom Iterator class for a list.
+29.Implement a rate limiter that allows only N requests per second.
+30. Design a parking lot system using OOP concepts in Java.
